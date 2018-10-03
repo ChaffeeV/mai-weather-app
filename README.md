@@ -34,3 +34,11 @@ curl http://127.0.0.1:5000/v1/forecast/?city=Tokyo\&dt=15374026
   "unit": "celsius"
 }
 ```
+
+Create and run docker container:
+```bash
+sudo docker build -t weatherman:latest .
+docker run -d -p 5000:5000 weatherman
+```
+
+
